@@ -13,7 +13,8 @@ const PrivateRoute = ({ children }) => {
         auth?.token ?
             children
             :
-            <Navigate to="/auth/login" />
+            children
+            // <Navigate to="/auth/login" />
 
     );
 };

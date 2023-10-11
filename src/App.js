@@ -1,4 +1,5 @@
 
+import Index from './pages';
 import Login from './pages/login';
 import PrivateRoute from './routes/privateRoute';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
@@ -12,7 +13,7 @@ function App() {
                 } />
                 <Route path="/dashboard" element={
                     <PrivateRoute>
-                        <Login />
+                        <Index />
                     </PrivateRoute>
                 } />
                 <Route path="*" element={
